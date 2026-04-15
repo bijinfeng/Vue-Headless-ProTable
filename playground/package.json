@@ -1,0 +1,21 @@
+{
+  "name": "playground",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite"
+  },
+  "dependencies": {
+    "vue": "^3.4.0",
+    "element-plus": "^2.5.0",
+    "ant-design-vue": "^4.1.0",
+    "@headless-pro-table/core": "workspace:*",
+    "@headless-pro-table/element-plus": "workspace:*",
+    "@headless-pro-table/antdv": "workspace:*"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.0",
+    "vite": "^5.0.0"
+  }
+}

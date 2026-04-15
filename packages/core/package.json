@@ -1,0 +1,20 @@
+{
+  "name": "@headless-pro-table/core",
+  "version": "1.0.0",
+  "description": "Headless ProTable Core Logic for Vue 3",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.20",
+    "vue": "^3.4.0"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.3.0"
+  }
+}
