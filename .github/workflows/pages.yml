@@ -40,7 +40,7 @@ jobs:
         run: pnpm --filter @vue-protable/core build
 
       - name: Build playground
-        run: pnpm --filter playground vite build
+        run: pnpm --filter playground build
         env:
           GITHUB_ACTIONS: true
 
