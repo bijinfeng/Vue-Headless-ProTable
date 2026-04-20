@@ -13,20 +13,20 @@
     "@vue-protable/element-plus": "workspace:*",
     "@tailwindcss/postcss": "^4.2.2",
     "@vueuse/core": "^14.2.1",
-    "ant-design-vue": "^4.1.0",
+    "ant-design-vue": "catalog:",
     "autoprefixer": "^10.5.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "element-plus": "^2.5.0",
+    "element-plus": "catalog:",
     "postcss": "^8.5.9",
     "shiki": "^4.0.2",
     "tailwind-merge": "^3.5.0",
     "tailwindcss": "^4.2.2",
-    "vue": "^3.4.0"
+    "vue": "catalog:"
   },
   "devDependencies": {
     "@types/node": "^25.6.0",
-    "@vitejs/plugin-vue": "^6.0.6",
+    "@vitejs/plugin-vue": "catalog:",
     "vite": "^8.0.8"
   }
 }

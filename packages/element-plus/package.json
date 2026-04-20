@@ -1,24 +1,57 @@
 {
   "name": "@vue-protable/element-plus",
-  "version": "1.0.0",
+  "version": "0.0.1",
+  "type": "module",
   "description": "Element Plus Adapter for Headless ProTable",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "author": "bijinfeng",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bijinfeng/vue-protable.git",
+    "directory": "packages/element-plus"
+  },
+  "homepage": "https://github.com/bijinfeng/vue-protable#readme",
+  "bugs": {
+    "url": "https://github.com/bijinfeng/vue-protable/issues"
+  },
+  "keywords": [
+    "vue",
+    "vue3",
+    "table",
+    "protable",
+    "element-plus"
+  ],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "prebuild": "pnpm -w --filter @vue-protable/core build",
-    "build": "vite build && vue-tsc --emitDeclarationOnly"
+    "build": "tsdown"
   },
   "dependencies": {
-    "@vue-protable/core": "workspace:*",
-    "element-plus": "^2.5.0",
-    "vue": "^3.4.0"
+    "@vue-protable/core": "workspace:*"
+  },
+  "peerDependencies": {
+    "vue": "catalog:",
+    "element-plus": "catalog:"
   },
   "devDependencies": {
-    "typescript": "^5.3.0",
-    "vite": "^5.0.0",
-    "vue-tsc": "^2.0.0",
-    "@vitejs/plugin-vue": "^5.0.0",
-    "unplugin-vue-jsx": "^0.0.0"
+    "element-plus": "catalog:",
+    "vue": "catalog:",
+    "unplugin-vue-jsx": "catalog:"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.cts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
   }
 }

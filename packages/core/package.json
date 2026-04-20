@@ -1,20 +1,54 @@
 {
   "name": "@vue-protable/core",
-  "version": "1.0.0",
+  "version": "0.0.1",
+  "type": "module",
   "description": "Headless ProTable Core Logic for Vue 3",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "author": "bijinfeng",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bijinfeng/vue-protable.git",
+    "directory": "packages/core"
+  },
+  "homepage": "https://github.com/bijinfeng/vue-protable#readme",
+  "bugs": {
+    "url": "https://github.com/bijinfeng/vue-protable/issues"
+  },
+  "keywords": [
+    "vue",
+    "vue3",
+    "table",
+    "protable",
+    "headless"
+  ],
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "build": "tsdown",
     "test": "vitest run"
   },
   "dependencies": {
-    "dayjs": "^1.11.20",
-    "vue": "^3.4.0"
+    "dayjs": "catalog:"
+  },
+  "peerDependencies": {
+    "vue": "catalog:"
   },
   "devDependencies": {
-    "tsup": "^8.0.0",
-    "typescript": "^5.3.0"
+    "vue": "catalog:"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.cts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
   }
 }
